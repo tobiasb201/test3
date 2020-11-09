@@ -1,0 +1,31 @@
+<app-haha2></app-haha2>
+<p>Hallo {{test2}}</p>
+<form>
+<div class="RadioButtonsJaNein">
+    <div [formGroup]="form" class="form-check form-check-inline">
+      <input
+        formControlName="test2"
+        class="form-control"
+        type="radio"
+        id="Story1ja"
+        value="test1"
+        name="test2"
+        value="man es klappt"
+      />
+      <label class="form-check-label"> Ja </label>
+    </div>
+    <div [formGroup]="form" class="form-check form-check-inline">
+      <input
+        formControlName="test2"
+        class="form-control"
+        type="radio"
+        id="Story1nein"
+        name="test2"
+        value="nein"
+      />
+      <label class="form-check-label" for="rb_Nein"> Nein </label>
+    </div>
+    <button (click)="push()">Push</button>
+    {{test}}
+</div>
+</form>
